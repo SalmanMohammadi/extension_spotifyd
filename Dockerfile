@@ -51,7 +51,7 @@ FROM debian:stable-slim
 
 # Install dependencies
 RUN apt-get update && \
-    apt-get install -yqq --no-install-recommends libasound2 dbus curl alsa-tools alsa-utils && \
+    apt-get install -yqq --no-install-recommends libasound2 dbus curl alsa-tools alsa-utils ca-certificates && \
     rm -rf /var/lib/apt/lists/* && \
     groupadd -r spotify && \
     useradd --no-log-init -r -g spotify -u 2002 spotify && \
