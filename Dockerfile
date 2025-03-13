@@ -30,7 +30,7 @@ FROM rust:latest AS builder
 
 # Install additional build dependencies
 RUN apt-get update && \
-    apt-get install -y git libasound2-dev libdbus-1-dev
+    apt-get install -y git libasound2-dev libdbus-1-dev libssl-dev 
 
 # Set working directory
 WORKDIR /app
@@ -51,7 +51,14 @@ FROM debian:stable-slim
 
 # Install dependencies
 RUN apt-get update && \
-    apt-get install -yqq --no-install-recommends libasound2 dbus curl alsa-tools alsa-utils ca-certificates && \
+    apt-get install -yqq --no-install-recommends \
+    libasound2-dev \
+    libssl-dev \
+    dbus \
+    curl \
+    alsa-tools \
+    alsa-utils \
+    ca-certificates && \
     rm -rf /var/lib/apt/lists/* && \
     groupadd -r spotify && \
     useradd --no-log-init -r -g spotify -u 2002 spotify && \
