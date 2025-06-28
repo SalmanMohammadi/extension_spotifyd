@@ -1,10 +1,10 @@
 [patch.crates-io]
-librespot-core = { git = "https://github.com/librespot-org/librespot", package = "librespot-core" }
-librespot-audio = { git = "https://github.com/librespot-org/librespot", package = "librespot-audio", default-features = false }
-librespot-connect = { git = "https://github.com/librespot-org/librespot", package = "librespot-connect" }
-librespot-discovery = { git = "https://github.com/librespot-org/librespot", package = "librespot-discovery" }
-librespot-metadata = { git = "https://github.com/librespot-org/librespot", package = "librespot-metadata" }
-librespot-oauth = { git = "https://github.com/librespot-org/librespot", package = "librespot-oauth" }
-librespot-playback = { git = "https://github.com/librespot-org/librespot", package = "librespot-playback", default-features = false }
-librespot-protocol = { git = "https://github.com/librespot-org/librespot", package = "librespot-protocol" }
+librespot-audio = { git = "https://github.com/librespot-org/librespot", rev = "80c27ec476666b40aba98327b3ba52d620dd6d06", package = "librespot-audio", default-features = false }
+librespot-core = { git = "https://github.com/librespot-org/librespot", rev = "80c27ec476666b40aba98327b3ba52d620dd6d06", package = "librespot-core" }
+librespot-connect = { git = "https://github.com/librespot-org/librespot", rev = "80c27ec476666b40aba98327b3ba52d620dd6d06", package = "librespot-connect" }
+librespot-discovery = { git = "https://github.com/librespot-org/librespot", rev = "80c27ec476666b40aba98327b3ba52d620dd6d06", package = "librespot-discovery" }
+librespot-metadata = { git = "https://github.com/librespot-org/librespot", rev = "80c27ec476666b40aba98327b3ba52d620dd6d06", package = "librespot-metadata" }
+librespot-oauth = { git = "https://github.com/librespot-org/librespot", rev = "80c27ec476666b40aba98327b3ba52d620dd6d06", package = "librespot-oauth" }
+librespot-playback = { git = "https://github.com/librespot-org/librespot", rev = "80c27ec476666b40aba98327b3ba52d620dd6d06", package = "librespot-playback", default-features = false }
+librespot-protocol = { git = "https://github.com/librespot-org/librespot", rev = "80c27ec476666b40aba98327b3ba52d620dd6d06", package = "librespot-protocol" }
 
