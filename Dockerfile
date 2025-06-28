@@ -38,6 +38,10 @@ WORKDIR /app
 # Clone the Spotifyd source code from GitHub
 RUN git clone https://github.com/Spotifyd/spotifyd.git .
 
+# Patch the cargo file to update the librespot dependency
+COPY librespot-patch.toml /app/librespot-patch.toml 
+RUN cat librespot-patch.toml >> Cargo.toml && rm librespot-patch.toml
+
 # Set client ID
 ARG SPOTIFY_CLIENT_ID
 RUN echo "Using Spotify client ID $SPOTIFY_CLIENT_ID"

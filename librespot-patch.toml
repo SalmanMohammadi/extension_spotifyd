@@ -1,0 +1,10 @@
+[patch.crates-io]
+librespot-core = { git = "https://github.com/librespot-org/librespot", package = "librespot-core" }
+librespot-audio = { git = "https://github.com/librespot-org/librespot", package = "librespot-audio", default-features = false }
+librespot-connect = { git = "https://github.com/librespot-org/librespot", package = "librespot-connect" }
+librespot-discovery = { git = "https://github.com/librespot-org/librespot", package = "librespot-discovery" }
+librespot-metadata = { git = "https://github.com/librespot-org/librespot", package = "librespot-metadata" }
+librespot-oauth = { git = "https://github.com/librespot-org/librespot", package = "librespot-oauth" }
+librespot-playback = { git = "https://github.com/librespot-org/librespot", package = "librespot-playback", default-features = false }
+librespot-protocol = { git = "https://github.com/librespot-org/librespot", package = "librespot-protocol" }
+
